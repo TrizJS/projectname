@@ -7,9 +7,9 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "export": "npx expo export --platform web",
-    "predeploy": "npm run export",
-    "deploy": "gh-pages -d dist"
+    "build": "npx expo export --ouptut-dir web-build --platform web",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d web-build"
   },
   "dependencies": {
     "expo": "^49.0.0",
